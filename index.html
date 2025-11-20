@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forster's Bakery</title>
+  <style>
+    body{
+      background-color: beige;
+    }
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+    }
+
+    header nav a {
+      color: #D84F24;
+      padding: 15px;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    header nav {
+      padding: 6px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    header nav button {
+      margin-left: 10px;
+    }
+    .login{
+      color: white;
+      background-color:#D84F24;
+      border-radius: 7px;
+      width: 70px;
+      padding: 8px;
+      display: flex;
+    }
+    .signup{
+      color: #D84F24;
+      background-color: white;
+      border: 2px solid #D84F24;
+      border-radius: 7px;
+      width: 70px;
+      padding: 8px;
+      display: flex;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .hero-text{
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+    h1{
+      font-size: 2em;
+      margin-top: 20px;
+    }
+
+    .Explore{
+      background-color: #D84F24;
+      border-radius: 7px;
+      color: #ffffff;
+      padding: 8px;
+    }
+
+    .hero-image{
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .favourites{
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .img-1{
+      background-color: #ffffff;
+      max-width: 250px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .img-1 button{
+      padding: 8px;
+      background-color: #D84F24;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: bold;
+    }
+
+    .img-1 img{
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .img-2{
+       background-color: #ffffff;
+      max-width: 250px;
+      text-align: center;
+      padding: 15px;border-radius: 10px;
+    }
+
+     .img-2 button{
+      padding: 8px;
+      background-color: #D84F24;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: bold;
+    }
+
+
+    .img-2 img{
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .img-3{
+      background-color: #ffffff;
+      max-width: 250px;
+      text-align: center;
+      padding: 15px;border-radius: 10px;
+    }
+
+     .img-3 button{
+      padding: 8px;
+      background-color: #D84F24;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: bold;
+    }
+
+
+    .img-3 img{
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #D84F24;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    @media screen  and (max-width: 768px) {
+      .hero {
+      flex-direction: column;
+      }
+      header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header nav a, header nav button {
+        margin: 5px 0;
+      }
+
+      .cards{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+         <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <button class="login">Log In</button>
+        <button class="signup">Sign Up</button>
+    </nav>
+    </header>
+      <section class="hero">
+        <div class="hero-text">
+        <h1>Welcome to forster's Bakery</h1>
+          
+    <p>We have the best pasteries you will ever enjoy.
+        Exquisite with a burst of flavour and class is 
+        ethos. Take our word for it, order now !
+    </p>
+    <button class="Explore">Explore Menu</button>
+        </div>
+      </section>
+
+      <div class="hero-image">
+        <img src="image/pngtree-fresh-pastry-and-bakery-items-available-on-trays-picture-image_2656294 1.png" >
+      </div>
+      <section class="Favourites">
+        <h2>Favourites</h2>
+        <div class="cards">
+             <div class="img-1">
+                <img src="image/chocolate-cake-berries-600nw-394680466 1.png" alt="">
+                <h3>cake</h3>
+                <BUtton>Chocolate</BUtton>
+                <button>red velvet</button>
+                <button>vanilla</button>
+                <p>$6</p>
+                <button>ORDER NOW</button>
+             </div>
+
+
+             <div class="img-2">
+                <img src="image/food-8385524_640 1.png" alt="">
+                <h3>Cinnamon Rolls</h3>
+                <BUtton>Chocolate</BUtton>
+                <button>lemon</button>
+                <button>vanilla</button>
+                <p>$4</p>
+                <button>ORDER NOW</button>
+             </div>
+
+
+             <div class="img-3">
+                <img src="image/blueberry-muffins-4-2-1-500x500 1.png" alt="">
+                <h3>Muffins</h3>
+                <BUtton>Chocolate</BUtton>
+                <button>wheat</button>
+                <button>blueberry</button>
+                <p>$4</p>
+                <button>ORDER NOW</button>
+             </div>
+
+        </div>
+
+      </section>
+        <footer>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+          </nav>
+          <P>@Copyright by (Name)</P>
+        </footer>
+</body>
+</html>
